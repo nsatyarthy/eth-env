@@ -18,11 +18,10 @@ done
 
 ${geth_dir}/puppeth # copy the generated json to $chain_dir
 
-
 for i in $(seq 1 $n_nodes)
   do
     node_dir="${chain_dir}/node_0$i"
     rm -rf "$node_dir"
     mkdir -p "$node_dir"
-    yes "" | ${geth_dir}/geth --verbosity 1 init ${chain_dir}/${chain_name}.json --datadir "$node_dir" | grep "Public address"
+    yes "" | ${geth_dir}/geth --verbosity 2 init ${chain_dir}/${chain_name}.json --datadir "$node_dir" | grep "Public address"
 done
