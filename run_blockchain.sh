@@ -1,7 +1,13 @@
-CHAIN=cicada
-DATADIR="${HOME}/apps/geth/${CHAIN}"
+geth="$HOME/apps/geth/geth_bin/geth"
+n_nodes=4
+chain_name="cicada"
+chain_dir="${HOME}/${chain_name}"
 
-geth --nodiscover --datadir $CHAIN --mine --miner.threads 1 --port 3311 --http.port 3312 &
-geth --nodiscover --datadir $CHAIN --mine --miner.threads 1 --port 3321 --http.port 3322 &
-geth --nodiscover --datadir $CHAIN --mine --miner.threads 1 --port 3331 --http.port 3332 &
-geth --nodiscover --datadir $CHAIN --mine --miner.threads 1 --port 3341 --http.port 3342 &
+for i in $(seq 1 $n_nodes)
+  do
+    node_dir="${chain_dir}/node_0$i"
+    rm -rf "$node_dir"
+    mkdir -p "$node_dir"
+    echo "=> $geth --nodiscover --datadir $node_dir --mine --miner.threads 1 --port "33${i}1" --http.port "33${i}2" &"
+    $geth --nodiscover --datadir $node_dir --mine --miner.threads 1 --port "33${i}1" --http.port "33${i}2" &
+done
