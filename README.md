@@ -14,9 +14,10 @@ Every blockchain starts with the first block - called the genesis block. Genesis
 
 ## Directory Structure
 ```
-  + sandbox
+
+  + geth
       |
-      |---- common
+      |---- cicada
       |       |
       |        ---- genesis.json
       |---- node_01
