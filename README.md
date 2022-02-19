@@ -13,17 +13,17 @@ Every blockchain starts with the first block - called the genesis block. Genesis
 
 ## Directory Structure
 ```
-  + cicada
-      |
-      |---- cicada.json
-      |
-      |---- node_01/
-      |
-      |---- node_02/
-      |
-      |---- node_03/
-      |
-       ---- node_04/
+  cicada
+   |
+   |---- cicada.json
+   |
+   |---- node_01/
+   |
+   |---- node_02/
+   |
+   |---- node_03/
+   |
+    ---- node_04/
 ```
 ## Node Creation
 
