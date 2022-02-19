@@ -16,15 +16,14 @@ Every blockchain starts with the first block - called the genesis block. Genesis
 ```
   + sandbox
       |
-       ---- common
-              |
-               ---- genesis.json
+      |---- common
+      |       |
+      |        ---- genesis.json
+      |---- node_01
       |
-       ---- node_01
+      |---- node_02
       |
-       ---- node_02
-      |
-       ---- node_03
+      |---- node_03
       |
        ---- node_04
 ```
