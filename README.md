@@ -1,4 +1,4 @@
-# Setup
+# Key Points
 
 ## Boot Nodes
 A node connects to the network using one of the predefined bootnodes. Through these bootnodes a node can join the network and find other nodes. Our private network will have 4 nodes, two of which are bootnodes. 
@@ -12,9 +12,11 @@ The main network uses proof-of-work consensus algorithm, but we'll go with proof
 ## Genesis Block
 Every blockchain starts with the first block - called the genesis block. Genesis block is created using the genesis.json file where we configure a few parameters. 
 
+
+# Build and Run the Blockchain
+
 ## Directory Structure
 ```
-
   + geth
       |
       |---- cicada
@@ -28,3 +30,8 @@ Every blockchain starts with the first block - called the genesis block. Genesis
       |
        ---- node_04
 ```
+## Node Creation
+
+## Account Creation
+
+## Start the Nodes
