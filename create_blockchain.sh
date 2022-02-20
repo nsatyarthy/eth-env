@@ -27,8 +27,6 @@ echo "Initialising the blockchain..."
 for i in $(seq 1 $n_nodes)
   do
     node_dir="${chain_dir}/node_0$i"
-    rm -rf "$node_dir"
-    mkdir -p "$node_dir"
     echo "=> ${geth_dir}/geth" init "${chain_dir}/${chain_name}.json" --datadir "$node_dir"
     "${geth_dir}/geth" init "${chain_dir}/${chain_name}.json" --datadir "$node_dir"
 done
