@@ -2,7 +2,7 @@
 
 * Overview
 
-Creates a 4-node private network. Scripts assume that the network is called 'cicada'. 
+  Creates a 4-node private network. Scripts assume that the network is called 'cicada'. 
 
 * Directory Structure - Scripts will create a cicada directory tree in $HOME as shown below. 
   
