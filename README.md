@@ -19,5 +19,6 @@
   ```
 
 * Steps
+  * install_geth.sh
   * create_blockchain.sh
   * run_blockchain.sh
