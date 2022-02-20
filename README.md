@@ -1,7 +1,6 @@
 # How to Setup a Private Ethereum Blockchain
 
-* Directory Structure
-  Name the network 'cicada' when prompted by the scripts. Scripts will create a cicada directory tree in $HOME as shown below. 
+* Directory Structure - Name the network 'cicada' when prompted by the scripts. Scripts will create a cicada directory tree in $HOME as shown below. 
   
   ```
   cicada
